@@ -1,0 +1,34 @@
+{
+  "extends": "./node_modules/@polkadot/dev/config/tsconfig",
+  "exclude": [
+    "build/**/*",
+    "**/build/**/*",
+    "**/test/**/*"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react",
+    "paths":
+    {
+      "@subsocial/apps-config": [ "packages/apps-config/src" ],
+      "@subsocial/apps-config/*": [ "packages/apps-config/src/*" ],
+      "@subsocial/react-api": [ "packages/react-api/src" ],
+      "@subsocial/react-api/*": [ "packages/react-api/src/*" ],
+      "@subsocial/react-components": [ "packages/react-components/src" ],
+      "@subsocial/react-components/*": [ "packages/react-components/src/*" ],
+      "@subsocial/react-hooks": [ "packages/react-hooks/src" ],
+      "@subsocial/react-hooks/*": [ "packages/react-hooks/src/*" ],
+      "@subsocial/react-params": [ "packages/react-params/src" ],
+      "@subsocial/react-params/*": [ "packages/react-params/src/*" ],
+      "@subsocial/react-query": [ "packages/react-query/src" ],
+      "@subsocial/react-query/*": [ "packages/react-query/src/*" ],
+      "@subsocial/react-signer": [ "packages/react-signer/src" ],
+      "@subsocial/react-signer/*": [ "packages/react-signer/src/*" ]
+    },
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@subsocial/ts",
+      "./node_modules/@types"
+    ]
+  }
+}
